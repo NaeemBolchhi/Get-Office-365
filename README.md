@@ -13,7 +13,7 @@ The simplest way to get Office 365 running on your Windows (10/11) computer.
 
   - Open Powershell, copy-paste the code below, and press Enter:
 ```
-irm https://github.com/NaeemBolchhi/Get-Office-365/GO365.ps1 | iex
+irm https://naeembolchhi.github.io/Get-Office-365/GO365.ps1 | iex
 ```
 
   - This will now download and install Office 365 (Word, Excel, PowerPoint) on your computer automatically.
