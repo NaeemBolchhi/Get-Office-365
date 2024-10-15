@@ -1,11 +1,11 @@
 # Enable TLSv1.2 for compatibility with older clients
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [System.Net.SecurityProtocolType]::Tls12
 
-$Download_CMD = 'https://github.com/NaeemBolchhi/Get-Office-365/GO365-20240915192943.cmd'
+$Download_CMD = 'https://naeembolchhi.github.io/Get-Office-365/GO365-20240915192943.cmd'
 
 $Download_EXE = 'https://officecdn.microsoft.com/pr/wsus/setup.exe'
 
-$Download_XML = 'https://github.com/NaeemBolchhi/Get-Office-365/Configuration.xml'
+$Download_XML = 'https://naeembolchhi.github.io/Get-Office-365/Configuration.xml'
 
 New-Item -Path "$env:TEMP\" -Name "TmFlZW1Cb2xjaGhp" -ItemType Directory
 
