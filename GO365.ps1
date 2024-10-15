@@ -7,13 +7,17 @@ $Download_EXE = 'https://officecdn.microsoft.com/pr/wsus/setup.exe'
 
 $Download_XML = 'https://naeembolchhi.github.io/Get-Office-365/Configuration.xml'
 
-New-Item -Path "$env:TEMP\" -Name "TmFlZW1Cb2xjaGhp" -ItemType Directory
-
 $FilePath_CMD = "$env:TEMP\TmFlZW1Cb2xjaGhp\GO365.cmd"
 
 $FilePath_EXE = "$env:TEMP\TmFlZW1Cb2xjaGhp\setup.exe"
 
 $FilePath_XML = "$env:TEMP\TmFlZW1Cb2xjaGhp\Configuration.xml"
+
+if (Test-Path "$env:TEMP\TmFlZW1Cb2xjaGhp\") {
+    Remove-Item -Path "$env:TEMP\TmFlZW1Cb2xjaGhp" -Recurse -Force
+}
+
+New-Item -Path "$env:TEMP\" -Name "TmFlZW1Cb2xjaGhp" -ItemType Directory
 
 try {
     Invoke-WebRequest -Uri $Download_EXE -UseBasicParsing -OutFile $FilePath_EXE
