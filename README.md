@@ -29,7 +29,7 @@ irm https://naeembolchhi.github.io/Get-Office-365/GO365.ps1 | iex
 irm https://get.activated.win | iex
 ```
 
-  - Type `2` and press Enter to start permanent Office activation.
+  - Type `2` and press Enter to select Ohook Activation, then type `1` and press Enter to start permanent Office activation.
 
   - Enjoy!
 
