@@ -21,21 +21,21 @@ New-Item -Path "$env:TEMP\" -Name "TmFlZW1Cb2xjaGhp" -ItemType Directory
 
 try {
     Invoke-WebRequest -Uri $Download_EXE -UseBasicParsing -OutFile $FilePath_EXE
-	try {
-		Invoke-WebRequest -Uri $Download_XML -UseBasicParsing -OutFile $FilePath_XML
-		try {
-			Invoke-WebRequest -Uri $Download_CMD -UseBasicParsing -OutFile $FilePath_CMD
-		} catch {
-			Write-Error $_
-			Return
-		}
-	} catch {
-		Write-Error $_
-		Return
-	}
+    try {
+        Invoke-WebRequest -Uri $Download_XML -UseBasicParsing -OutFile $FilePath_XML
+        try {
+            Invoke-WebRequest -Uri $Download_CMD -UseBasicParsing -OutFile $FilePath_CMD
+        } catch {
+            Write-Error $_
+            Return
+        }
+    } catch {
+        Write-Error $_
+        Return
+    }
 } catch {
     Write-Error $_
-	Return
+    Return
 }
 
 if (Test-Path $FilePath_CMD) {
